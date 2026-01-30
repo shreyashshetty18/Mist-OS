@@ -3,11 +3,25 @@
     padding: 0%;
     box-sizing: border-box;
 }
-html, body {
+html, body, #root {
     height: 100%;
     width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
     background-color: #000;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-image: url(/wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+body{
+    background-color: #121212;
 }
