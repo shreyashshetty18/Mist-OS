@@ -4,5 +4,19 @@
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    background-color: rgb(63, 63, 63);
+    padding-block: 0.75rem;
+    border-radius: 0.75rem;
+    padding-inline: 1rem;
    
+    .icon{
+        padding: 0.65rem;
+        border-radius: 0.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 1/1;
+        
+    }
+
 }
