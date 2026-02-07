@@ -1,16 +1,37 @@
-# React + Vite
+# Mist-OS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, lightweight desktop environment interface built with React and Vite. Mist-OS provides a clean, intuitive user experience with a dock-based navigation system and a sleek, minimalist design.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Dock Navigation** - A beautiful dock component for quick access to applications and features
+- **Modern UI** - Built with SCSS for scalable and maintainable styling
+- **Fast Development** - Powered by Vite with Hot Module Replacement (HMR) for instant feedback
+- **Production Ready** - Optimized build process for deployment
 
-## React Compiler
+## Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+Mist-OS/
+├── src/
+│   ├── components/
+│   │   └── Dock.jsx          # Main dock navigation component
+│   ├── assets/               # Static assets
+│   ├── App.jsx              # Root application component
+│   ├── app.scss             # Main application styles
+│   └── main.jsx             # Application entry point
+├── public/
+│   └── doc-icons/           # Icon assets
+├── index.html               # HTML entry point
+├── vite.config.js          # Vite configuration
+├── eslint.config.js        # ESLint configuration
+└── package.json            # Project dependencies
+```
 
-## Expanding the ESLint configuration
+## Technology Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** - UI library for building interactive components
+- **Vite** - Next-generation build tool and dev server
+- **SCSS** - CSS preprocessor for advanced styling
+- **ESLint** - Code quality and consistency checker
+
