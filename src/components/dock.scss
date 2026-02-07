@@ -8,6 +8,7 @@
     padding-block: 0.75rem;
     border-radius: 0.75rem;
     padding-inline: 1rem;
+    backdrop-filter: blur(5rem);
    
     .icon{
         padding: 0.65rem;
@@ -16,7 +17,30 @@
         align-items: center;
         justify-content: center;
         aspect-ratio: 1/1;
-        
     }
 
+    .github{
+        background-color: black;
+    }
+    .note{
+        background: linear-gradient(to bottom, rgb(255, 179, 87), rgb(255, 153, 28));
+    }
+    .pdf{
+        background: linear-gradient(to bottom, rgb(255, 65, 78), rgb(255, 25, 40));
+    }
+    .calender{
+        background: linear-gradient(to bottom, rgb(30, 0, 255), rgb(69, 36, 255));
+    }
+    .spotify{
+        background: linear-gradient(to bottom, rgb(30, 215, 96), rgb(25, 200, 80));
+    }
+    .mail{
+        background: linear-gradient(to bottom, rgb(0, 191, 255), rgb(0, 150, 255));
+    }
+    .link{
+        background: linear-gradient(to bottom, rgb(255, 0, 255), rgb(200, 0, 200));
+    }
+    .cli{
+        background: linear-gradient(to bottom, rgb(151, 151, 151), rgb(130, 130, 130));
+    }
 }
