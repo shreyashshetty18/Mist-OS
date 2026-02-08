@@ -9,6 +9,7 @@ function App() {
     <>
       <main>
         <Nav />
+        
         <Dock />
       </main>
     </>

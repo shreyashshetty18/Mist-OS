@@ -1,20 +1,36 @@
 import React from 'react'
 import './nav.scss'
+import DateTime from './DateTime'
 
 const Nav = () => {
   return (
-    <div>
+    <nav>
       <div className="left">
         <div className='apple-logo'>
           <img src="./navbar-icons/apple.svg" alt="apple logo" />
         </div>
-      </div>
-      <div className="right">
-        <div className="wifi-icon">
-          <img src="./navbar-icons/wifi.svg" alt="wifi icon" />
+        <div className="nav-item">
+          <p>Shreyash Shetty</p>
+        </div>
+        <div className="nav-item">
+          <p>File</p>
+        </div>
+        <div className="nav-item">
+          <p>Window</p>
+        </div>
+        <div className="nav-item">
+          <p>Terminal</p>
         </div>
       </div>
-    </div>
+      <div className="right">
+        <div className="nav-icon">
+          <img src="./navbar-icons/wifi.svg" alt="wifi icon" />
+        </div>
+        <div className="nav-icon">
+          <DateTime />
+        </div>
+      </div>
+    </nav>
   )
 }
 
