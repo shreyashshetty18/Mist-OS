@@ -4,11 +4,18 @@
     background-color: #000000;
     border-radius: 0.75rem;
     overflow: hidden;
+    color: #ececec;
 
     .nav{
 
         padding-inline: 0.75rem;
         padding-block: 0.5rem;
+        display: flex;
+        padding-inline: 0.75rem;
+        padding-block: 0.5rem;
+        border-bottom: 1px solid rgba(245, 245, 245, 0.25);
+        gap: 1rem;
+        align-items: center;
 
         .dots{
             display: flex;

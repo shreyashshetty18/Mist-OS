@@ -1,7 +1,7 @@
 import { Rnd } from 'react-rnd'
 import './windows.scss'
 
-const MacWindow = () => {
+const MacWindow = ({ children }) => {
   return (
     <Rnd>
         <div className="window">
@@ -11,8 +11,9 @@ const MacWindow = () => {
               <div className="dot yellow"></div>
               <div className="dot green"></div>
             </div>
+            <div className="title"><p>shreyashshetty - Mist OS</p></div>
           </div>
-          <div className="main-content"></div>
+          <div className="main-content">{children}</div>
         </div>
     </Rnd>
   )

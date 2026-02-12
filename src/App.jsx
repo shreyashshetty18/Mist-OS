@@ -11,7 +11,10 @@ function App() {
       <main>
         <Nav />
         <Dock />
-        <MacWindow />
+        <MacWindow>
+          <h2 style={{padding: '1rem'}}>Work in Progress..!!</h2>
+          <h5><p style={{paddingLeft: '8rem'}}>-Shreyash Shetty</p></h5>
+        </MacWindow>
       </main>
     </>
   )
