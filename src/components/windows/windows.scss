@@ -2,9 +2,14 @@
     height: 300px;
     width: 500px;
     background-color: #000000;
-    border-radius: 10px;
+    border-radius: 0.75rem;
+    overflow: hidden;
 
     .nav{
+
+        padding-inline: 0.75rem;
+        padding-block: 0.5rem;
+
         .dots{
             display: flex;
             gap: 0.25rem;
@@ -14,6 +19,15 @@
             width: 15px;
             border-radius: 50%;
             background-color: #fff;
+        }
+        .red{
+            background-color: #d20000;
+        }
+        .yellow{
+            background-color: #d2d200;
+        }
+        .green{
+            background-color: #00d200;
         }
     }
 }
