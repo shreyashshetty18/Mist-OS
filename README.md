@@ -1,15 +1,16 @@
 # 🌫️ Mist-OS
 
-A modern, lightweight desktop environment interface built with React and Vite. Mist-OS provides a clean, intuitive user experience with a dock-based navigation system and a sleek, minimalist design.
+A sleek, modern portfolio website inspired by macOS design principles. Built with React and Vite, this project showcases projects and skills with a clean, intuitive interface featuring a dock-based navigation system and a minimalist aesthetic.
 
 🔗 **[Live Demo](https://mist-os.vercel.app/)**
 
 ## ✨ Features
 
-- 🎯 **Responsive Dock Navigation** - A beautiful dock component for quick access to applications and features
+- 🎯 **macOS-Inspired Design** - A beautiful dock navigation component mimicking macOS for an elegant user experience
+- 📱 **Responsive Portfolio** - Showcase projects, skills, and experience in an interactive, minimal design
 - 🎨 **Modern UI** - Built with SCSS for scalable and maintainable styling
 - ⚡ **Fast Development** - Powered by Vite with Hot Module Replacement (HMR) for instant feedback
-- 🚀 **Production Ready** - Optimized build process for deployment
+- 🚀 **Production Ready** - Optimized build process for seamless portfolio deployment
 
 ## 📁 Project Structure
 
@@ -17,13 +18,16 @@ A modern, lightweight desktop environment interface built with React and Vite. M
 Mist-OS/
 ├── src/
 │   ├── components/
-│   │   └── Dock.jsx          # Main dock navigation component
+│   │   ├── Dock.jsx          # macOS-inspired dock navigation
+│   │   ├── Nav.jsx           # Navigation component
+│   │   └── windows/          # Portfolio section windows
 │   ├── assets/               # Static assets
 │   ├── App.jsx              # Root application component
 │   ├── app.scss             # Main application styles
 │   └── main.jsx             # Application entry point
 ├── public/
-│   └── doc-icons/           # Icon assets
+│   ├── doc-icons/           # Document and section icons
+│   └── navbar-icons/        # Navigation bar icons
 ├── index.html               # HTML entry point
 ├── vite.config.js          # Vite configuration
 ├── eslint.config.js        # ESLint configuration
