@@ -3,12 +3,14 @@ import "./app.scss"
 import Dock from './components/Dock'
 import Nav from './components/Nav'
 import MacWindow from './components/windows/MacWindow'
+import BootScreen from './components/windows/BootScreen'
 
 function App() {
 
   return (
     <>
       <main>
+        <BootScreen onFinish={() => console.log("Boot screen finished")} />
         <Nav />
         <Dock />
         <MacWindow>
