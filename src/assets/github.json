@@ -5,12 +5,12 @@
     "title": "Web-Based OS Portfolio",
     "description": "A macOS-inspired web-based operating system built with React, featuring draggable windows, a dock, and terminal-style navigation.",
     "tags": ["React", "CSS", "Window Manager", "UI/UX"],
-    "repoLink": "https://github.com/username/web-os-portfolio",
-    "demoLink": "https://webos-portfolio.vercel.app"
+    "repoLink": "https://github.com/shreyashshetty18/Mist-OS",
+    "demoLink": "https://mist-os.vercel.app/"
   },
   {
     "id": 2,
-    "image": "https://i.pinimg.com/1200x/d7/89/39/d7893923eb163f08af690a11a3cd7454.jpg",
+    "image": "https://i.pinimg.com/1200x/88/40/88/884088224e5b43909c81469cab8c0dda.jpg",
     "title": "Realtime Chat Application",
     "description": "A realtime chat application with authentication, private rooms, and message persistence using WebSockets.",
     "tags": ["React", "Node.js", "Socket.io", "MongoDB"],
