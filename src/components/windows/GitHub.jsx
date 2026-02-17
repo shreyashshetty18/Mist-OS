@@ -21,7 +21,7 @@ const GitCard = ({ data }) => {
   );
 };
 
-const GitHub = ({ windowName, windowProps  }) => {
+const GitHub = ({ windowName, windowProps }) => {
   return (
     <MacWindow windowName={windowName} windowProps={windowProps}  >
       <div className="cards">
