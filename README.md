@@ -39,5 +39,5 @@ Mist-OS/
 - ⚛️ **React** - UI library for building interactive components
 - ⚙️ **Vite** - Next-generation build tool and dev server
 - 🎨 **SCSS** - CSS preprocessor for advanced styling
-- ✓ **ESLint** - Code quality and consistency checker
+
 
