@@ -3,7 +3,7 @@ import "./windows.scss";
 import { useEffect, useState } from "react";
 import { useRef } from "react";
 
-const MacWindow = ({ children, width='40vw', height='60vh', windowName, windowProps }) => {
+const MacWindow = ({ children, width='40vw', height='60vh', windowName, windowProps, title='blackmyth - zsh' }) => {
 
   const MENU_BAR_HEIGHT = 28;
 
@@ -182,7 +182,7 @@ useEffect(() => {
             </div>
           </div>
           <div className="title">
-            <p>blackmyth - zsh</p>
+            <p>{title}</p>
           </div>
         </div>
         <div className="main-content">

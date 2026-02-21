@@ -5,9 +5,10 @@ import Nav from './components/Nav'
 import GitHub from './components/windows/GitHub'
 import MacWindow from './components/windows/MacWindow'
 import BootScreen from './components/windows/BootScreen'
+import Note from './components/windows/Note'
 
 function App() {
-  const [windowsState, setWindowsState] = useState({ github: false })
+  const [windowsState, setWindowsState] = useState({ github: false, note: false })
   const [topZIndex, setTopZIndex] = useState(1)
   const [minimizedWindows, setMinimizedWindows] = useState({})
 
@@ -22,6 +23,8 @@ function App() {
   const handleDockClick = (iconName) => {
     if (iconName === 'github') {
       setWindowsState(state => ({ ...state, github: true }))
+    } else if (iconName === 'note') {
+      setWindowsState(state => ({ ...state, note: true }))
     }
   }
 
@@ -32,6 +35,7 @@ function App() {
         <Nav />
         <Dock onIconClick={handleDockClick} />
         {windowsState.github && <GitHub windowName="github" windowProps={windowProps} />}
+        {windowsState.note && <Note windowName="note" windowProps={windowProps} />}
         <MacWindow windowProps={windowProps}>
           <h2 style={{padding: '1rem'}}>Work in Progress..!!</h2>
           <h5><p style={{paddingLeft: '8rem'}}>-Shreyash Shetty</p></h5>
