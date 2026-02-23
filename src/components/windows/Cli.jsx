@@ -16,41 +16,38 @@ const Cli = ({ windowName, windowProps }) => {
             fn: () => `Frontend: React, Vue.js, Vanilla JS, Sass, HTML/CSS
 Backend: Node.js, Express, Python, Django
 Databases: MongoDB, PostgreSQL, MySQL
-Tools: Git, Docker, Webpack, Vite
-Cloud: AWS, Azure, Heroku`
+Tools: Git, Docker, Webpack, Vite`
+
         },
         projects: {
             description: 'View my projects',
             usage: 'projects',
             fn: () => `1. Portfolio Website - React + Vite
-2. E-commerce Platform - MERN Stack
-3. Task Management App - Next.js
-4. Real-time Chat App - Socket.io
-5. Data Dashboard - React + Chart.js`
+2. EkCupChai - React + Js
+3. FluxBoard - HTML/CSS/JS
+4. NexusPDF ChatBot - Python & Langchain`
         },
         experience: {
             description: 'Display work experience',
             usage: 'experience',
-            fn: () => `Senior Developer @ Tech Corp (2022 - Present)
-  - Led development of 5+ React applications
-  - Mentored junior developers
+            fn: () => `Data Analysis Intern @ IIT Bombay (Jun2025 - Oct2025)
+    - Analyzed large datasets using Python and SQL
 
-Full Stack Developer @ Web Solutions (2020 - 2022)
-  - Built scalable APIs with Node.js
-  - Designed responsive UIs with React`
+Web Development Intern @ Walstar Technologies (Sept2025 - Oct2025)
+    - Developed a responsive e-commerce website using Shopify theme development and Liquid templating language`
         },
         contact: {
             description: 'Get contact information',
             usage: 'contact',
-            fn: () => `Email: ankur@example.com
-Phone: +1 (555) 123-4567
-Location: San Francisco, CA`
+            fn: () => `Email: shreyash@example.com
+Phone: +91 123-123-4567
+Location: Maharashtra, India`
         },
         github: {
             description: 'Open GitHub profile',
             usage: 'github',
             fn: () => {
-                window.open('https://github.com', '_blank')
+                window.open('https://github.com/shreyashshetty018', '_blank')
                 return 'Opening GitHub...'
             }
         },
@@ -62,9 +59,9 @@ Location: San Francisco, CA`
         social: {
             description: 'View social media links',
             usage: 'social',
-            fn: () => `Twitter: @ankurdev
-LinkedIn: /in/ankurprajapati
-Portfolio: ankurprajapati.dev`
+            fn: () => `Twitter: @shreyash04356
+LinkedIn: /in/shreyashshetty-0909
+Portfolio: shreyash-shetty-portfolio.netlify.app`
         },
         echo: {
             description: 'Echo a passed string',
@@ -89,29 +86,29 @@ Type 'help' to see all available commands, or try:
 
 Happy exploring! 🚀
 `
-  return (
-    <MacWindow windowName={windowName} windowProps={windowProps}>
-        <div className="cli-window">
-            <Terminal 
-                commands={commands}
-                welcomeMessage={welcomeMessage}
-                promptLabel={'shreyash:~$'}
-                
-                /* docs-based visual customization */
-                backgroundColor="#242424"
-                textColor="#e5e5e5"
-                promptLabelStyle={{ color: '#00ff00' }}
-                inputTextStyle={{ color: '#ffffff' }}
-                outputTextStyle={{ color: '#d1d5db' }}
+    return (
+        <MacWindow windowName={windowName} windowProps={windowProps}>
+            <div className="cli-window">
+                <Terminal
+                    commands={commands}
+                    welcomeMessage={welcomeMessage}
+                    promptLabel={'shreyash:~$'}
 
-                /* docs-based behavior customization */
-                hideTopBar
-                autoFocus
-                commandPassThrough={(cmd) => `command not found: ${cmd}`}
-            />
-        </div>
-    </MacWindow>
-  )
+                    /* docs-based visual customization */
+                    backgroundColor="#242424"
+                    textColor="#e5e5e5"
+                    promptLabelStyle={{ color: '#00ff00' }}
+                    inputTextStyle={{ color: '#ffffff' }}
+                    outputTextStyle={{ color: '#d1d5db' }}
+
+                    /* docs-based behavior customization */
+                    hideTopBar
+                    autoFocus
+                    commandPassThrough={(cmd) => `command not found: ${cmd}`}
+                />
+            </div>
+        </MacWindow>
+    )
 }
 
 export default Cli
