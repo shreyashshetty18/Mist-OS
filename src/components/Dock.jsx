@@ -2,6 +2,19 @@ import "./dock.scss"
 
 const Dock = ({ onIconClick }) => {
   const handleClick = (iconName) => {
+    if (iconName === 'calender') {
+      window.open('https://calendar.google.com/', '_blank');
+      return;
+    }
+    if (iconName === 'mail') {
+      window.open('https://mail.google.com/mail/?view=cm&fs=1&to=shreyashshetty99@gmail.com', '_blank');
+      return;
+    }
+    if (iconName === 'link') {
+      window.open('https://www.linkedin.com/in/shreyash-shetty0909/', '_blank');
+      return;
+    }
+
     if (onIconClick) {
       onIconClick(iconName)
     }
